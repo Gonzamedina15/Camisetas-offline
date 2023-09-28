@@ -1,0 +1,13 @@
+header{
+    background-color: $color-negro;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    .logo{
+        img{
+            max-height: 100px;
+        }
+    }
+}
