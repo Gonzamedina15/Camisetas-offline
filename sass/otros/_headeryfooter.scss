@@ -10,4 +10,21 @@ header{
             max-height: 100px;
         }
     }
+    nav{
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            list-style-type: none;
+            color: $color-bordo;
+            li{
+                margin-right: 20px;
+                a{
+                    font-family: 'Kanit', sans-serif;
+                }
+            }
+        }
+        
+    }
 }

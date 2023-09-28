@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["sass/otros/_headeryfooter.scss","sass/variables/_variables.scss"],"names":[],"mappings":"AAAA;EACI,kBCKS;EDJT;EACA;EACA;EACA;EACA;;AAEI;EACI","file":"estilos.css"}
+{"version":3,"sourceRoot":"","sources":["sass/otros/_headeryfooter.scss","sass/variables/_variables.scss"],"names":[],"mappings":"AAAA;EACI,kBCKS;EDJT;EACA;EACA;EACA;EACA;;AAEI;EACI;;AAIJ;EACI;EACA;EACA;EACA;EACA;EACA,OCdC;;ADeD;EACI;;AACA;EACI","file":"estilos.css"}

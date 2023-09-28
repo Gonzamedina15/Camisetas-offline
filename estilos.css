@@ -9,5 +9,19 @@ header {
 header .logo img {
   max-height: 100px;
 }
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  color: #810000;
+}
+header nav ul li {
+  margin-right: 20px;
+}
+header nav ul li a {
+  font-family: "Kanit", sans-serif;
+}
 
 /*# sourceMappingURL=estilos.css.map */
