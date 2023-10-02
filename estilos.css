@@ -148,7 +148,7 @@ body .card:hover {
 }
 body .card .card-body {
   padding: 25px;
-  margin-top: -15px;
+  margin-top: 0px;
 }
 body .card .card-body .card-title {
   color: #CF0A0A;
@@ -170,6 +170,62 @@ body .card .precio .btn {
 body .card .precio .btn:hover {
   background-color: #EEEBDD;
   color: #CF0A0A;
+}
+body .container-button {
+  width: 100%;
+  gap: 40px;
+  display: flex;
+  justify-content: center;
+}
+body .container-button a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  text-decoration: none;
+}
+body .container-button a .boton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 80px;
+  background-color: #CF0A0A;
+  color: #EEEBDD;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s ease all;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+body .container-button a .boton::after {
+  content: "";
+  width: 1px;
+  height: 1px;
+  background: none;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transition: 0.4s ease-in-out all;
+}
+body .container-button a .boton:hover::after {
+  transform: scale(400);
+  background: #000000;
+  border-radius: 300px;
+}
+body .container-button a .boton span {
+  position: relative;
+  z-index: 2;
+  transition: 0.3s ease all;
+}
+body .linea-separadora {
+  border: 1px solid #000000;
+  margin: 10px 50px;
 }
 
 /*# sourceMappingURL=estilos.css.map */

@@ -13,6 +13,7 @@ body{
         font-size: 90px;
         
     }
+    // cards
     .card{
         border-radius: 30px;
         box-shadow: 1px 0px 20px 0px rgba(0,0,0,0.75);
@@ -23,7 +24,7 @@ body{
         }
         .card-body{
             padding: 25px;
-            margin-top: -15px;
+            margin-top: 0px;
             .card-title{
                 color: $color-rojo;
                 font-family: 'Bebas Neue', sans-serif;
@@ -47,4 +48,65 @@ body{
             }
         }
     }
-}
+    // botón
+    .container-button{
+        width: 100%;
+        gap: 40px;
+        display: flex;
+        justify-content: center;
+        a{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            text-decoration: none;
+            .boton{
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 30%;
+                height: 80px;
+                background-color: $color-rojo;
+                color: $color-blanco;
+                font-family: 'Bebas Neue', sans-serif;
+                font-size: 20px;
+                border: none;
+                cursor: pointer;
+                text-transform: uppercase;
+                transition: .3s ease all;
+                border-radius: 5px;
+                position: relative;
+                overflow: hidden;
+                &::after{
+                    content: "";
+                    width: 1px;
+                    height: 1px;
+                    background: none;
+                    position: absolute;
+                    z-index: 1;
+                    top: 50%;
+                    left: 50%;
+                    transition: .4s ease-in-out all;
+                    
+                }
+                &:hover::after{
+                    transform: scale(400);
+                    background: $color-negro;
+                    border-radius: 300px;
+                   
+                }
+                span{
+                    position: relative;
+                    z-index: 2;
+                    transition: .3s ease all;
+                    
+                }
+            }
+        }
+    }
+        .linea-separadora{
+            border: 1px solid $color-negro; 
+            margin: 10px 50px; 
+            
+        }
+    }
