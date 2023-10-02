@@ -141,7 +141,7 @@ body .card {
   border-radius: 30px;
   box-shadow: 1px 0px 20px 0px rgba(0, 0, 0, 0.75);
   background-color: #000000;
-  transition: transform 0.3s ease;
+  transition: transform 0.4s ease;
 }
 body .card:hover {
   transform: scale(0.9);
