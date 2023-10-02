@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: $color-blanco;
+    h1{
+        color: $color-rojo;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 90px;
+        
+    }
+    .card{
+        border-radius: 30px;
+        box-shadow: 1px 0px 20px 0px rgba(0,0,0,0.75);
+        background-color: $color-negro;
+        transition: transform 0.3s ease;
+        &:hover{
+            transform: scale(0.9);
+        }
+        .card-body{
+            padding: 25px;
+            margin-top: -15px;
+            .card-title{
+                color: $color-rojo;
+                font-family: 'Bebas Neue', sans-serif;
+            }
+        }
+        .card-img-top{
+            border-radius: 30px 30px 0px 0px;
+        }
+        .precio{
+            color: $color-rojo;
+            .btn{
+                font-family: 'Bebas Neue', sans-serif;
+                background-color: $color-rojo;
+                color: $color-blanco;
+                border-radius: 30px;
+                width: 120px;
+                &:hover{
+                    background-color: $color-blanco;
+                    color: $color-rojo;
+                }
+            }
+        }
+    }
+}

@@ -5,6 +5,8 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 130%;
     .logo{
         img{
             max-height: 100px;
@@ -17,14 +19,114 @@ header{
             justify-content: space-between;
             align-items: center;
             list-style-type: none;
-            color: $color-bordo;
+            color: $color-rojo;
             li{
                 margin-right: 20px;
                 a{
-                    font-family: 'Kanit', sans-serif;
+                    color: $color-rojo;
+                    text-decoration: none;
+                    &:hover{
+                        color: $color-blanco;
+                    }
+                    &:focus{
+                        color: $color-blanco;
+                        text-decoration: underline;
+                    }
                 }
             }
         }
         
     }
+    .search{
+        position: relative;
+        padding: 5px;
+        input{
+            width: 0px;
+            height: 40px;
+            padding: 0 20px;
+            font-size: 18px;
+            color: $color-negro;
+            outline: none;
+            border: 1px solid $color-blanco;
+            border-radius: 30px;
+            transition: all 0.6s ease;
+            &:focus{
+                width: 240px;
+            }
+        }
+        &:hover input{
+            width: 240px;
+        }
+        .btn{
+            position: absolute;
+            background: $color-rojo;
+            top: 0;
+            right: 0;
+            width: 50px;
+            height: 50px;
+            line-height: 40px;
+            text-align: center;
+            color: $color-blanco;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    }
+}
+
+// Footer
+footer{
+    background-color: $color-negro;
+    color: $color-rojo; 
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    img{
+        width: 100px;
+        height: auto;
+    }
+    .footer-social{
+        a{
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        img{
+            width: 30px;
+            height: auto;
+        }
+    }
+    .container {
+        position: relative;
+        width: 50%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        gap: 10px;
+        justify-content: end;
+        button {
+            width: 50px;
+            height: 50px;
+            border: none;
+            background-color: $color-rojo;
+            transition: 0.3s;
+            cursor: pointer;
+            &:nth-child(1):hover {
+                background-color: $color-blanco;
+              }
+            &:nth-child(2):hover {
+            background-color: $color-blanco;
+            }
+            &:nth-child(3):hover {
+                background-color: $color-blanco;
+            }
+            .icon {
+                width: 26px;
+                height: 26px;
+                fill: $color-negro;
+              }
+          }
+      }
+      
 }

@@ -1,10 +1,12 @@
 header {
-  background-color: #1B1717;
+  background-color: #000000;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 130%;
 }
 header .logo img {
   max-height: 100px;
@@ -15,13 +17,159 @@ header nav ul {
   justify-content: space-between;
   align-items: center;
   list-style-type: none;
-  color: #810000;
+  color: #CF0A0A;
 }
 header nav ul li {
   margin-right: 20px;
 }
 header nav ul li a {
-  font-family: "Kanit", sans-serif;
+  color: #CF0A0A;
+  text-decoration: none;
+}
+header nav ul li a:hover {
+  color: #EEEBDD;
+}
+header nav ul li a:focus {
+  color: #EEEBDD;
+  text-decoration: underline;
+}
+header .search {
+  position: relative;
+  padding: 5px;
+}
+header .search input {
+  width: 0px;
+  height: 40px;
+  padding: 0 20px;
+  font-size: 18px;
+  color: #000000;
+  outline: none;
+  border: 1px solid #EEEBDD;
+  border-radius: 30px;
+  transition: all 0.6s ease;
+}
+header .search input:focus {
+  width: 240px;
+}
+header .search:hover input {
+  width: 240px;
+}
+header .search .btn {
+  position: absolute;
+  background: #CF0A0A;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  line-height: 40px;
+  text-align: center;
+  color: #EEEBDD;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #000000;
+  color: #CF0A0A;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer img {
+  width: 100px;
+  height: auto;
+}
+footer .footer-social a {
+  text-decoration: none;
+  margin-right: 10px;
+}
+footer .footer-social img {
+  width: 30px;
+  height: auto;
+}
+footer .container {
+  position: relative;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: end;
+}
+footer .container button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: #CF0A0A;
+  transition: 0.3s;
+  cursor: pointer;
+}
+footer .container button:nth-child(1):hover {
+  background-color: #EEEBDD;
+}
+footer .container button:nth-child(2):hover {
+  background-color: #EEEBDD;
+}
+footer .container button:nth-child(3):hover {
+  background-color: #EEEBDD;
+}
+footer .container button .icon {
+  width: 26px;
+  height: 26px;
+  fill: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Bebas Neue", sans-serif;
+  background-color: #EEEBDD;
+}
+body h1 {
+  color: #CF0A0A;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 90px;
+}
+body .card {
+  border-radius: 30px;
+  box-shadow: 1px 0px 20px 0px rgba(0, 0, 0, 0.75);
+  background-color: #000000;
+  transition: transform 0.3s ease;
+}
+body .card:hover {
+  transform: scale(0.9);
+}
+body .card .card-body {
+  padding: 25px;
+  margin-top: -15px;
+}
+body .card .card-body .card-title {
+  color: #CF0A0A;
+  font-family: "Bebas Neue", sans-serif;
+}
+body .card .card-img-top {
+  border-radius: 30px 30px 0px 0px;
+}
+body .card .precio {
+  color: #CF0A0A;
+}
+body .card .precio .btn {
+  font-family: "Bebas Neue", sans-serif;
+  background-color: #CF0A0A;
+  color: #EEEBDD;
+  border-radius: 30px;
+  width: 120px;
+}
+body .card .precio .btn:hover {
+  background-color: #EEEBDD;
+  color: #CF0A0A;
 }
 
 /*# sourceMappingURL=estilos.css.map */
