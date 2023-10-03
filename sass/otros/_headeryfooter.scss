@@ -33,6 +33,26 @@ header{
                         text-decoration: underline;
                     }
                 }
+                &:hover .submenu{
+                    display: block;
+                }
+                .submenu{
+                    position: absolute;
+                    background: $color-rojo;
+                    display: none;
+                    .lista-submenu{
+                        .opciones{
+                            display: block;
+                            padding: 0px;
+                            color: $color-blanco;
+                            text-decoration: none;
+                            &:hover{
+                                color: $color-negro;
+
+                            }
+                        }
+                    }
+                }
             }
         }
         

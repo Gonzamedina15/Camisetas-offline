@@ -104,9 +104,24 @@ body{
             }
         }
     }
-        .linea-separadora{
-            border: 1px solid $color-negro; 
-            margin: 10px 50px; 
-            
+    .linea-separadora{
+        border: 1px solid $color-negro; 
+        margin: 10px 50px; 
+        
+    }
+    // La Scaloneta
+    .la-scaloneta{
+        background-image: url(multi/fondo.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-family: 'Bebas Neue', sans-serif;
+        .titulo-scaloneta{
+            color: $color-blanco;
+            font-size: 90px;
+        }
+        .subtitulo{
+            color: $color-blanco;
+            font-size: 50px;
         }
     }
+}
