@@ -246,7 +246,7 @@ body .linea-separadora {
 }
 body .la-scaloneta {
   background-image: url(multi/fondo.jpg);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   font-family: "Bebas Neue", sans-serif;
 }
